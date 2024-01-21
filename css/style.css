@@ -1,0 +1,258 @@
+ /* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**************************************/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html{
+    font-family: "Inter", sans-serif;
+}
+
+header{
+    background-color: #D9D9D9;
+}
+
+.header-container{
+    padding: 20px 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-container{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.profile-container img{
+    height: 50px;
+    width: 50px;
+}
+
+.profile-container .name{
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 110px;
+    text-transform: uppercase;
+}
+
+.profile-container .role{
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.profile-container .log-out a{
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav {
+    display: flex;
+}
+
+nav .nav-link.active{
+    background-color: #cdcdcd;
+}
+
+nav .nav-link{
+    width: 215px;
+    padding: 18px 0;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+nav .nav-link a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+.invoice-container{
+    margin: 30px 18px;
+    /* display: flex;
+    gap: 18px; */
+}
+
+.invoice-box{
+    width: 280px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+.invoice-box .invoice-title{
+    font-size: 1.8rem;
+    padding: 8px 12px;
+}
+
+.invoice-box .invoice-number{
+    padding: 17px 12px;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+
+.table{
+    padding-left: 30px;
+    border: 1px solid;
+    text-align: left;
+    width: 100%;
+}
+
+.table th:last-child, td:last-child{
+    text-align: center;
+    padding-right: 20px;
+}
+
+.table th{
+    font-weight: 700;
+}
+
+.table tr td,th{
+    padding: 16px 0;
+}
+
+
+.table tr{
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+.table td:first-child, th:first-child {
+    padding-left:20px;
+    padding-right:0;
+  }
+
+.badge{
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFF;
+    padding: 4px 6px;
+    border-radius: 2px;
+    text-align: center;
+  }
+
+.badge-open{
+    background: #35FF56;
+  }
+.badge-paid{
+    background: #FF3535;
+  }
+.badge-overdue{
+    background: #FFA235;
+  }
+
+.table-container .nav-tabs{
+    display: flex;
+    gap: 5px;
+}
+
+.table-container .nav-tabs .nav-tab-item button{
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 8px 16px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+} 
+
+.table-container .nav-tabs .nav-tab-item button:hover{
+    cursor: pointer;
+    background-color: #cdcdcd;
+}
+
+.table-nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-box1{
+    margin-left: 750px;
+}
+
+.box-input1{
+    display: flex;
+    height: 20px;
+    margin-right: 60px;
+    background-color: #cdcdcd;
+    padding: 4px 8px;
+}
+
+.box-input1 p{
+    display: flex;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 10px;
+    /* width: 50px; */
+    margin-right: 25px;
+}
+
+.box-input1 i {
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+
+.box-input{
+    margin-right: 30px;
+    width: 200px;
+    padding: 4px 8px;
+    border: 0.25px solid;
+}
+
+.box-input input{
+    width: 100px;
+    outline: none;
+    border-radius: 2px;
+}
+.box-input input{
+    border: none;
+}

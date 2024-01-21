@@ -1,0 +1,54 @@
+html{
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+.invoice-container {
+    width:100%;
+    display: grid;
+    place-items: center;
+    grid-column-gap: 5px;
+    row-gap: 5px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+    html{
+        font-size: 55.5%;
+    }
+    .profile-container{
+        margin-right: 84px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    
+    .invoice-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 768px) {
+    html{
+        font-size: 57.5%;
+    }
+    .invoice-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    html{
+        font-size: 60%;
+    }
+    .box-input input{
+        width: 180px;
+    }
+    .profile-container{
+        margin-right: 84px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .invoice-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  

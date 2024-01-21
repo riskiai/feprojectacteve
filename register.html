@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acteeve</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styleregister.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="">
+                <img src="images/logo.png" alt="">
+            </a>
+            <div class="profile-container">
+                <img src="images/profile-icon.png" alt="">
+                <div>
+                    <div class="name">Nasher syam</div>
+                    <div class="role">Admin</div>
+                    <div class="log-out">
+                        <a href="">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-link">
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+            <div class="nav-link">
+                <a href="">Event Purchase</a>
+            </div>
+            <div class="nav-link"> 
+                <a href="">Operation Purchase</a>
+            </div>
+            <div class="nav-link ">
+                <a href="register.html">Register</a>
+            </div>
+            <div class="nav-link">
+                <a href="">Report</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+      <select name="" id="selectPage" class="selectPilihan">
+        <option value="" disabled selected>Pilihan</option>
+        <option value="register" data-target="formregister.html">Register</option>
+        <option value="contact" data-target="formcontact.html">Contact</option>
+        <option value="project" data-target="formproject.html">Project</option>
+        <option value="project" data-target="formtax.html">Tax</option>
+        <option value="project" data-target="formuser.html">User</option>
+        <!-- tambahkan opsi lainnya -->
+    </select>         
+        <div class="invoice-container">
+            <div class="invoice-box">
+                <div class="invoice-title">
+                    BILLING
+                </div>
+                <div class="invoice-number">
+                    Rp X.XXX.XXX.XXX
+                </div>
+            </div>
+            <div class="invoice-box">
+                <div class="invoice-title">
+                    COST ESTIMATE
+                </div>
+                <div class="invoice-number">
+                    Rp X.XXX.XXX.XXX
+                </div>
+            </div>
+            <div class="invoice-box">
+                <div class="invoice-title">
+                    MARGIN
+                </div>
+                <div class="invoice-number">
+                    Rp X.XXX.XXX.XXX
+                </div>
+            </div>
+            <div class="invoice-box">
+                <div class="invoice-title">
+                    PERCANTAGE
+                </div>
+                <div class="invoice-number">
+                    Rp X.XXX.XXX.XXX
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <div class="table-nav-container">
+            <ul class="nav-tabs">
+                <li class="nav-tab-item">
+                    <button class="" onclick="showPanel(0,'#cdcdcd')"   >Contact</button>
+                </li>
+                <li class="nav-tab-item">
+                    <button class="" onclick="showPanel(1,'#cdcdcd')" >Project</button>
+                </li>
+                <li class="nav-tab-item">
+                    <button class=""  onclick="showPanel(2,'#cdcdcd')" >Tax</button>
+                </li>
+                <li class="nav-tab-item">
+                  <button class=""  onclick="showPanel(3,'#cdcdcd')" >User</button>
+              </li>
+            </ul>
+
+            <form action="#" class="form-box1">
+              <div class="box-input1">
+              <p>Filter</p>
+              <i class='bx bx-filter'></i>
+              </div>
+          </form>
+
+            <form action="#" >
+                <div class="box-input">
+                <input type="text"  placeholder="search" name="search">
+                <i class='bx bx-search'></i>
+                </div>
+            </form>
+            
+        </div>
+        <div>
+                <table class="table">
+                    <tr class="table-header">
+                      <th>Project Name</th>
+                      <th>Receiver Name</th>
+                      <th>Description</th>
+                      <th>Doc Type</th>
+                      <th>Subtotal</th>
+                      <th>Ppn</th>
+                      <th>Pph</th>
+                      <th>total</th>
+                      <th>status</th>
+                      <th>Project</th>
+                    </tr>
+                    <tr>
+                      <td>01-Dec-23</td>
+                      <td>PT INDOTAMA PRIMA MANDIRI</td>
+                      <td>Booth PRODUCTION</td>
+                      <td>Invoice</td>
+                      <td>1.000.000.000</td>
+                      <td>1.000.000.000</td>
+                      <td>20.000.000</td>
+                      <td>1.090.000.000</td>
+                      <td>
+                        <div class="badge badge-open">OPEN</div>
+                      </td>
+                      <td>
+                        HEINEKEN X DWP 2023
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>01-Dec-23</td>
+                      <td>PT INDOTAMA PRIMA MANDIRI</td>
+                      <td>Booth PRODUCTION</td>
+                      <td>Invoice</td>
+                      <td>1.000.000.000</td>
+                      <td>1.000.000.000</td>
+                      <td>20.000.000</td>
+                      <td>1.090.000.000</td>
+                      <td>
+                        <div class="badge badge-paid">PAID</div>
+                      </td>
+                      <td>
+                        HEINEKEN X DWP 2023
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>01-Dec-23</td>
+                      <td>PT INDOTAMA PRIMA MANDIRI</td>
+                      <td>Booth PRODUCTION</td>
+                      <td>Invoice</td>
+                      <td>1.000.000.000</td>
+                      <td>1.000.000.000</td>
+                      <td>20.000.000</td>
+                      <td>1.090.000.000</td>
+                      <td>
+                        <div class="badge badge-overdue">overdue</div>
+                      </td>
+                      <td>
+                        HEINEKEN X DWP 2023
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>01-Dec-23</td>
+                      <td>PT INDOTAMA PRIMA MANDIRI</td>
+                      <td>Booth PRODUCTION</td>
+                      <td>Invoice</td>
+                      <td>1.000.000.000</td>
+                      <td>1.000.000.000</td>
+                      <td>20.000.000</td>
+                      <td>1.090.000.000</td>
+                      <td>
+                        <div class="badge badge-overdue">overdue</div>
+                      </td>
+                      <td>
+                        HEINEKEN X DWP 2023
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>01-Dec-23</td>
+                      <td>PT INDOTAMA PRIMA MANDIRI</td>
+                      <td>Booth PRODUCTION</td>
+                      <td>Invoice</td>
+                      <td>1.000.000.000</td>
+                      <td>1.000.000.000</td>
+                      <td>20.000.000</td>
+                      <td>1.090.000.000</td>
+                      <td>
+                        <div class="badge badge-overdue">overdue</div>
+                      </td>
+                      <td>
+                        HEINEKEN X DWP 2023
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>01-Dec-23</td>
+                      <td>PT INDOTAMA PRIMA MANDIRI</td>
+                      <td>Booth PRODUCTION</td>
+                      <td>Invoice</td>
+                      <td>1.000.000.000</td>
+                      <td>1.000.000.000</td>
+                      <td>20.000.000</td>
+                      <td>1.090.000.000</td>
+                      <td>
+                        <div class="badge badge-overdue">overdue</div>
+                      </td>
+                      <td>
+                        HEINEKEN X DWP 2023
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>01-Dec-23</td>
+                      <td>PT INDOTAMA PRIMA MANDIRI</td>
+                      <td>Booth PRODUCTION</td>
+                      <td>Invoice</td>
+                      <td>1.000.000.000</td>
+                      <td>1.000.000.000</td>
+                      <td>20.000.000</td>
+                      <td>1.090.000.000</td>
+                      <td>
+                        <div class="badge badge-overdue">overdue</div>
+                      </td>
+                      <td>
+                        HEINEKEN X DWP 2023
+                      </td>
+                    </tr>
+                    
+                </table> 
+
+                <table class="table">
+                    <tr class="table-header">
+                      <th>Date</th>
+                      <th>Receiver Name</th>
+                      <th>Description</th>
+                      <th>Doc Type</th>
+                      <th>Subtotal</th>
+                      <th>Ppn</th>
+                      <th>Pph</th>
+                      <th>total</th>
+                      <th>status</th>
+                    </tr>
+                    <tr>
+                      <td>01-Dec-23</td>
+                      <td>PT INDOTAMA PRIMA MANDIRI</td>
+                      <td>Booth PRODUCTION</td>
+                      <td>Invoice</td>
+                      <td>1.000.000.000</td>
+                      <td>1.000.000.000</td>
+                      <td>20.000.000</td>
+                      <td>1.090.000.000</td>
+                      <td>
+                        <div class="badge badge-open">OPEN</div>
+                      </td>
+                     
+                    </tr>
+                    <tr>
+                      <td>01-Dec-23</td>
+                      <td>PT INDOTAMA PRIMA MANDIRI</td>
+                      <td>Booth PRODUCTION</td>
+                      <td>Invoice</td>
+                      <td>1.000.000.000</td>
+                      <td>1.000.000.000</td>
+                      <td>20.000.000</td>
+                      <td>1.090.000.000</td>
+                      <td>
+                        <div class="badge badge-paid">PAID</div>
+                      </td>
+                   
+                    </tr>
+                    <tr>
+                      <td>01-Dec-23</td>
+                      <td>PT INDOTAMA PRIMA MANDIRI</td>
+                      <td>Booth PRODUCTION</td>
+                      <td>Invoice</td>
+                      <td>1.000.000.000</td>
+                      <td>1.000.000.000</td>
+                      <td>20.000.000</td>
+                      <td>1.090.000.000</td>
+                      <td>
+                        <div class="badge badge-overdue">Overdue</div>
+                      </td>
+                    </tr>
+                    
+                </table> 
+
+                <table class="table">
+                    <tr class="table-header">
+                      <th>Project Name</th>
+                      <th>Client</th>
+                      <th>Month</th>
+                      <th>Billing</th>
+                      <th>Cost Estimate</th>
+                      <th>Margin</th>
+                      <th>%</th>
+                      <th>status</th>
+                      <th>Coat Progress</th>
+
+                    </tr>
+                    <tr>
+                      <td>HEINEKEN X DWP 2023</td>
+                      <td>MULTI BINTANG INDONESIA</td>
+                      <td>DECEMBER 2023</td>
+                      <td>4.000.000.000</td>
+                      <td>3.000.000.000</td>
+                      <td>1.000.000.000</td>
+                      <td>20%</td>
+                      <td>
+                        <div class="badge badge-open">OPEN</div>
+                      </td>
+                      <td>80%</td>
+                    </tr>
+                    <tr>
+                        <td>HEINEKEN X DWP 2023</td>
+                        <td>MULTI BINTANG INDONESIA</td>
+                        <td>DECEMBER 2023</td>
+                        <td>4.000.000.000</td>
+                        <td>3.000.000.000</td>
+                        <td>1.000.000.000</td>
+                        <td>20%</td>
+                        <td>
+                            <div class="badge badge-open">OPEN</div>
+                          </td>
+                        <td>80%</td>
+                      
+                      </tr>
+                      <tr>
+                        <td>HEINEKEN X DWP 2023</td>
+                        <td>MULTI BINTANG INDONESIA</td>
+                        <td>DECEMBER 2023</td>
+                        <td>4.000.000.000</td>
+                        <td>3.000.000.000</td>
+                        <td>1.000.000.000</td>
+                        <td>20%</td>
+                        <td>
+                            <div class="badge badge-open">OPEN</div>
+                          </td>
+                        <td>80%</td>
+                      </tr>
+                    
+                </table> 
+
+                <table class="table">
+                  <tr class="table-header">
+                    <th>User Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    
+                    
+
+                  </tr>
+                  <tr>
+                    <td>George Washington Pane</td>
+                    <td>joje@acteeveindonesia.com</td>
+                    <td>ADMIN</td>
+                  
+                  </tr>
+
+                  <tr>
+                    <td>George Washington Pane</td>
+                    <td>joje@acteeveindonesia.com</td>
+                    <td>ADMIN</td>
+                  
+                  </tr>
+
+                  <tr>
+                    <td>George Washington Pane</td>
+                    <td>joje@acteeveindonesia.com</td>
+                    <td>ADMIN</td>
+                  
+                  </tr>
+
+                   <tr>
+                    <td>George Washington Pane</td>
+                    <td>joje@acteeveindonesia.com</td>
+                    <td>ADMIN</td>
+                  
+                  </tr>
+              
+                  
+              </table> 
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script>
+          document.getElementById('selectPage').addEventListener('change', function() {
+          var selectedOption = this.options[this.selectedIndex];
+          var targetPage = selectedOption.getAttribute('data-target');
+
+          if (targetPage) {
+              window.location.href = targetPage;
+          }
+      });
+    </script>
+    
+</body>
+</html>
