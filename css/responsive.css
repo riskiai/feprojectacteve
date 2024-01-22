@@ -15,6 +15,8 @@ html{
     html{
         font-size: 55.5%;
     }
+   
+
     .profile-container{
         margin-right: 84px;
         display: flex;
@@ -30,6 +32,16 @@ html{
     html{
         font-size: 57.5%;
     }
+
+    .form-type{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .box-input input{
+        width: 100px;
+    }
     .invoice-container{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -38,9 +50,10 @@ html{
     html{
         font-size: 60%;
     }
-    .box-input input{
+    .box-input input {
         width: 180px;
     }
+  
     .profile-container{
         margin-right: 84px;
         display: flex;
@@ -52,3 +65,8 @@ html{
     }
   }
   
+  @media (min-width: 1280px) {
+    .invoice-box{
+        width: 350px;
+    }
+  }
