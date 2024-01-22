@@ -112,15 +112,17 @@ nav .nav-link a{
     font-size: 15px;
 }
 
+ /*************************** invoice box ************************/
 
 .invoice-container{
-    margin: 30px 18px;
+    margin: 30px auto;
+    /* max-width: 1280px; */
     /* display: flex;
     gap: 18px; */
 }
 
 .invoice-box{
-    width: 280px;
+    width: 300px;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -139,7 +141,7 @@ nav .nav-link a{
     font-weight: 400;
 }
 
-
+ /******************** TABLE  **********************************/
 .table{
     padding-left: 30px;
     border: 1px solid;
@@ -190,6 +192,10 @@ nav .nav-link a{
     background: #FFA235;
   }
 
+  .table-container{
+    margin-top: 60px;
+  }
+
 .table-container .nav-tabs{
     display: flex;
     gap: 5px;
@@ -214,14 +220,14 @@ nav .nav-link a{
     justify-content: space-between;
 }
 
-.form-box1{
-    margin-left: 750px;
+.form-container{
+    display: flex;
 }
 
 .box-input1{
     display: flex;
     height: 20px;
-    margin-right: 60px;
+    margin: 0 5px;
     background-color: #cdcdcd;
     padding: 4px 8px;
 }
@@ -243,7 +249,7 @@ nav .nav-link a{
 
 .box-input{
     margin-right: 30px;
-    width: 200px;
+    /* width: 200px; */
     padding: 4px 8px;
     border: 0.25px solid;
 }
@@ -256,3 +262,153 @@ nav .nav-link a{
 .box-input input{
     border: none;
 }
+
+/**********************************************/
+
+/***************************** register **********************************/
+.selectPilihan{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearence: none;
+    padding: 10px ;
+    border: none;
+    margin-left: 65px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    background-color: #cdcdcd;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 180px;
+    background-image: url("../images/arrow.png");
+    background-position: 90% center; /*Positioning*/
+    background-repeat: no-repeat; /*Prevent showing multiple background images*/
+ }
+
+    .register-title{
+        background-color: #ECECEC;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 60px;
+        height: 60px;
+        padding-left: 30px;
+    }
+
+    .container{
+        padding: 0 30px;
+        min-height: 100vh;
+        margin-bottom: 50px;
+    }
+
+    .subtitle{
+        padding-top: 12px;
+        padding-bottom: 18px;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .select-contact{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearence: none;
+        border: 1px solid;
+        font-size: 1.5rem;
+        background-color: transparent;
+        border-radius: 2px;
+        width: 120px;
+        background-image: url("../images/arrow.png");
+        background-position: 90% center; 
+        background-repeat: no-repeat; 
+    }
+    
+/****************************/
+
+/********* form ***********/
+.form-contact{
+    margin-top: 110px;
+}
+
+.form-contact h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.form-contact label{
+    display: block;
+    font-size: 1.5rem;
+    padding-bottom: 7px;
+}
+
+.form-contact .input-field{
+    padding-top: 26px;
+}
+
+.form-contact form .input-box {
+    gap: 30px;
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-type{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.form-btns{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 110px;
+    gap: 24px;
+    
+}
+
+.form-btns .btn-cancel{
+ padding: 6px 12px;
+ border: none;
+ font-weight: 700;
+ box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+.form-btns .btn-submit{
+ padding: 6px 12px;
+ border: none;
+ background-color: #FF0000;
+ font-weight:700 ;
+ color:#FFF;
+ box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+.upload-file {
+    display: flex !important;
+    font-size: 1rem !important;
+    padding: 8px;
+    align-items: center;
+    text-align: center;
+}
+.upload-file:hover{
+    cursor: pointer;
+}
+
+.upload-file i{
+    padding-right: 5px;
+    font-size: 3rem;
+}
+
+.upload-container{
+    display: inline-block;
+    align-items: center;
+}
+
+#upload-file {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+ }
+
+
+/**************************/
